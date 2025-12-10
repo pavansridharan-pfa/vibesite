@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.pf-btn {
+    height: 2.5rem;
+    margin-right: 1.2rem;
+    border: 0.1rem solid #4E0973;
+    background: linear-gradient(176deg, #4e0973, #7e2ba8cc) !important;
+    color: #fff;
+    font-weight: 500 !important;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: transform 0.2s, background 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 2rem;
+}
+.pf-btn:hover {
+    background: linear-gradient(176deg, #7e2ba8cc, #4e0973);
+    transform: scale(1.05);
+}
+</style>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Purple Fabric Academy</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900">
+  <!-- Navbar -->
+  <header class="w-full border-b border-gray-200 bg-white/80 backdrop-blur-xl sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between py-4 px-8 md:px-12 lg:px-16 xl:px-20">
+      <a href="https://www.purplefabric.ai" target="_blank" class="flex items-center space-x-4">
+  <img src="logo.png" alt="Purple Fabric Academy Logo" class="h-10">
+  <span class="text-[#333] font-bold text-xl">| Academy</span>
+</a>
+      <ul class="hidden md:flex space-x-8 text-sm font-medium">
+        <li><a href="#courses" class="hover:text-indigo-600">Courses</a></li>
+        <li><a href="#features" class="hover:text-indigo-600">Features</a></li>
+        <li><a href="#instructors" class="hover:text-indigo-600">Instructors</a></li>
+        <li><a href="#pricing" class="hover:text-indigo-600">Pricing</a></li>
+      </ul>
+      <a href="#" class="hidden md:block bg-indigo-600 text-white px-4 py-2 rounded-lg shadow hover:bg-indigo-700">Login</a>
+    </nav>
+  </header>
+
+<!-- Carousel -->
+<section class="relative w-full overflow-hidden">
+
+  <!-- Background Video (persistent for all slides) -->
+  <video class="absolute inset-0 w-full h-full object-cover" src="purple-wave-home.mp4" autoplay loop muted playsinline></video>
+  <div class="absolute inset-0 bg-white/70"></div>
+  <!-- Persistent Foreground Video -->
+	<div class="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 max-w-3xl px-16 z-30">
+	  <iframe
+		src="https://www.youtube.com/embed/3GXrIuma4Vg?autoplay=1&mute=1&controls=1&rel=0&modestbranding=1"
+		class="w-full aspect-video rounded-xl shadow-md bg-black"
+		title="YouTube video player"
+		frameborder="0"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+		allowfullscreen>
+	  </iframe>
+	</div>
+  <!-- Slider Wrapper -->
+  <div id="heroCarousel" class="relative w-full h-full">
+
+    <!-- Slides Container -->
+    <div class="slides relative w-full h-full">
+
+      <!-- Slide 1 -->
+      <div class="slide relative w-full h-full">
+        <div class="relative max-w-7xl mx-auto px-8 md:px-12 lg:px-16 xl:px-20 py-20 grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 class="text-5xl font-bold leading-tight mb-6">
+              <span class="underline decoration-[#333] text-[#333]">Your</span>
+              <span class="bg-gradient-to-r from-[#333] to-[#7a53a2] text-transparent bg-clip-text">
+                journey leading the AI revolution starts here
+              </span>
+            </h1>
+            <p class="text-lg mb-8 text-[#333]">No coding skills required- just natural language. Create new AI products, or incorporate AI into your existing products.</p>
+            <div class="flex space-x-4">
+              <a href="#courses" class="pf-btn">Start Learning Now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide relative w-full h-full hidden">
+        <div class="relative max-w-7xl mx-auto px-8 md:px-12 lg:px-16 xl:px-20 py-20 grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 class="text-5xl font-bold leading-tight mb-6">
+              <span class="underline decoration-[#333] text-[#333]">Build</span>
+              <span class="bg-gradient-to-r from-[#333] to-[#7a53a2] text-transparent bg-clip-text">
+                AI agents, teams of digital experts, and smart workflows
+              </span>
+            </h1>
+            <p class="text-lg mb-8 text-[#333]">Direct your symphony orchestra for pitch perfect performance everytime</p>
+            <div class="flex space-x-4">
+              <a href="#courses" class="pf-btn">Start Learning Now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide relative w-full h-full hidden">
+        <div class="relative max-w-7xl mx-auto px-8 md:px-12 lg:px-16 xl:px-20 py-20 grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 class="text-5xl font-bold leading-tight mb-6">
+              <span class="underline decoration-[#333] text-[#333]">Control</span>
+              <span class="bg-gradient-to-r from-[#333] to-[#7a53a2] text-transparent bg-clip-text">
+                the Context, Shape the Response
+              </span>
+            </h1>
+            <p class="text-lg mb-8 text-[#333]">Curate the data your LLM works on, with guardrails and guiderails to get exactly the output you want. Your data never leaves your cloud, for unmatched security.</p>
+            <div class="flex space-x-4">
+              <a href="#courses" class="pf-btn">Start Learning Now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slide relative w-full h-full hidden">
+        <div class="relative max-w-7xl mx-auto px-8 md:px-12 lg:px-16 xl:px-20 py-20 grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 class="text-5xl font-bold leading-tight mb-6">
+              <span class="underline decoration-[#333] text-[#333]">Govern</span>
+              <span class="bg-gradient-to-r from-[#333] to-[#7a53a2] text-transparent bg-clip-text">
+               your AI- not the other way around
+              </span>
+            </h1>
+            <p class="text-lg mb-8 text-[#333]">LLM agnostic and API driven for universal compatibility. End-to-end monitoring and optimization - choose your compute cost and time to scale sustainably and effortlessly </p>
+            <div class="flex space-x-4">
+              <a href="#courses" class="pf-btn">Start Learning Now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Indicators -->
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex space-x-4 z-50">
+      <button class="indicator w-4 h-4 rounded-full bg-black opacity-60" data-slide="0"></button>
+      <button class="indicator w-4 h-4 rounded-full bg-black opacity-40" data-slide="1"></button>
+      <button class="indicator w-4 h-4 rounded-full bg-black opacity-40" data-slide="2"></button>
+      <button class="indicator w-4 h-4 rounded-full bg-black opacity-40" data-slide="3"></button>
+    </div>
+
+  </div>
+
+</section>
+<!-- FAQ Section -->
+<section id="faq" class="bg-gray-50 py-20">
+  <div class="max-w-5xl mx-auto px-8 md:px-12 lg:px-16 xl:px-20">
+
+    <!-- Gradient Heading -->
+    <h2 class="text-4xl font-bold mb-10 bg-gradient-to-r from-[#333] to-[#7a53a2] text-transparent bg-clip-text">
+      Frequently Asked Questions
+    </h2>
+
+    <div class="space-y-4">
+
+      <!-- FAQ Item 1 -->
+      <div class="border border-gray-200 rounded-xl bg-white">
+        <button class="w-full flex justify-between items-center p-5 text-left faq-toggle">
+          <span class="font-semibold text-lg text-[#333]">
+            What skills do I need to use Purple Fabric?
+          </span>
+          <span class="text-[#333] transition-transform duration-300 faq-arrow">▼</span>
+        </button>
+        <div class="faq-content hidden px-5 pb-5 text-gray-700">
+          Purple Fabric is designed for the curious problem solver. You don't need any tech skills like coding.
+		  All you need is the willingness to learn, the ability to clearly understand problems, the imagination to come up with solutions
+		  and the communication skills to bring stakeholders on the same page.
+        </div>
+      </div>
+
+      <!-- FAQ Item 2 -->
+      <div class="border border-gray-200 rounded-xl bg-white">
+        <button class="w-full flex justify-between items-center p-5 text-left faq-toggle">
+          <span class="font-semibold text-lg text-[#333]">
+            How will getting a certification in Purple Fabric help advance my career?
+          </span>
+          <span class="text-[#333] transition-transform duration-300 faq-arrow">▼</span>
+        </button>
+        <div class="faq-content hidden px-5 pb-5 text-gray-700">
+          AI skills are the most in demand across industry, and Purple Fabric is the fastest growing open 
+          platform for enterprise AI. The Purple Fabric Certification proves demonstrable AI  
+          expertise and puts you way ahead of the curve in today's competitive job markets.
+        </div>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div class="border border-gray-200 rounded-xl bg-white">
+        <button class="w-full flex justify-between items-center p-5 text-left faq-toggle">
+          <span class="font-semibold text-lg text-[#333]">
+            I'm an experienced Technology/Business professional. How will Purple Fabric help me?
+          </span>
+          <span class="text-[#333] transition-transform duration-300 faq-arrow">▼</span>
+        </button>
+        <div class="faq-content hidden px-5 pb-5 text-gray-700">
+          Kudos! Your expertise in your organization's systems and processes puts you in a unique 
+          position to integrate AI into how you serve your customers, and to do that you should get started with Purple Fabric
+          right NOW!.
+        </div>
+      </div>
+
+      <!-- FAQ Item 4 -->
+      <div class="border border-gray-200 rounded-xl bg-white">
+        <button class="w-full flex justify-between items-center p-5 text-left faq-toggle">
+          <span class="font-semibold text-lg text-[#333]">
+           How do I get started, right now?
+          </span>
+          <span class="text-[#333] transition-transform duration-300 faq-arrow">▼</span>
+        </button>
+        <div class="faq-content hidden px-5 pb-5 text-gray-700">
+          You can start off by learning from the experts that created Purple Fabric, in their live instructor-led sessions 
+          in the classroom or virtually. Check out the latest schedule here. If you prefer learning by yourself 
+          at your own pace, check out our self-paced online courses. Explore our catalog here.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Learning Paths Section -->
+  <section id="paths" class="bg-gray-50 py-20">
+    <div class="max-w-6xl mx-auto px-8 md:px-12 lg:px-16 xl:px-20 text-center">
+      <h2 class="text-3xl font-bold mb-4">Curated Learning Paths</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto mb-10">Whether you're starting fresh or upskilling for your next promotion, our structured learning paths guide you step-by-step to mastery.</p>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-3">AI & Automation</h3>
+          <p class="text-gray-600 mb-4">Build strong foundations in GenAI, automation workflows, and applied machine intelligence.</p>
+          <a href="#" class="text-indigo-600 font-medium hover:underline">View Path</a>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-3">Data Analytics</h3>
+          <p class="text-gray-600 mb-4">Learn data storytelling, dashboards, and forecasting using modern analytics tools.</p>
+          <a href="#" class="text-indigo-600 font-medium hover:underline">View Path</a>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold mb-3">Product & Strategy</h3>
+          <p class="text-gray-600 mb-4">Master product thinking, customer journey mapping, and execution frameworks.</p>
+          <a href="#" class="text-indigo-600 font-medium hover:underline">View Path</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20">
+    <div class="max-w-7xl mx-auto px-8 md:px-12 lg:px-16 xl:px-20">
+      <h2 class="text-3xl font-bold text-center mb-12">Why Learn With Us?</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="p-6 border border-gray-200 rounded-2xl hover:shadow-md transition">
+          <h3 class="text-xl font-semibold mb-2">Live Expert Sessions</h3>
+          <p class="text-gray-600">Interact with mentors who bring real-world experience and insights.</p>
+        </div>
+        <div class="p-6 border border-gray-200 rounded-2xl hover:shadow-md transition">
+          <h3 class="text-xl font-semibold mb-2">Hands-on Projects</h3>
+          <p class="text-gray-600">Work on capstone projects that mirror challenges faced in top organisations.</p>
+        </div>
+        <div class="p-6 border border-gray-200 rounded-2xl hover:shadow-md transition">
+          <h3 class="text-xl font-semibold mb-2">Personalized Feedback</h3>
+          <p class="text-gray-600">Receive detailed guidance on your work and learning journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-10">
+    <div class="max-w-7xl mx-auto px-8 md:px-12 lg:px-16 xl:px-20 grid md:grid-cols-3 gap-10">
+      <div>
+        <h3 class="text-xl font-bold text-white mb-4">Purple Fabric Academy</h3>
+        <p class="text-gray-400">Empowering professionals with future-ready learning experiences.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white mb-3">Quick Links</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="#courses" class="hover:text-white">Courses</a></li>
+          <li><a href="#paths" class="hover:text-white">Learning Paths</a></li>
+          <li><a href="#pricing" class="hover:text-white">Pricing</
+    </ul>
+  </div>
+</div>
+</footer>
+
+<!-- Carousel Script -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const slides = document.querySelectorAll('#heroCarousel .slide');
+  const indicators = document.querySelectorAll('#heroCarousel .indicator');
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('hidden', i !== index);
+      slide.classList.toggle('active', i === index);
+    });
+
+    indicators.forEach((dot, i) => {
+      dot.classList.toggle('opacity-60', i === index);
+      dot.classList.toggle('opacity-40', i !== index);
+    });
+
+    currentSlide = index;
+  }
+
+  indicators.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      showSlide(index);
+    });
+  });
+
+  showSlide(0);
+});
+</script>
+<script>
+  document.querySelectorAll('.faq-toggle').forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const content = toggle.nextElementSibling;
+      const icon = toggle.querySelector('svg');
+
+      // Toggle visibility
+      content.classList.toggle('hidden');
+
+      // Rotate arrow
+      icon.classList.toggle('rotate-180');
+    });
+  });
+</script>
+</body>
+</html>
